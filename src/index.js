@@ -7,15 +7,10 @@
  * @see https://firebase.google.com/docs/reference/js/firestore_lite
  */
 
-import { initializeApp } from "firebase/app";
 import { getFirestore, getDocs, collection } from "firebase/firestore/lite";
+import { app } from "./firebase-config";
 
-const firebaseConfig = {
-  apiKey: import.meta.env.VITE_API_KEY || "API_KEY_VACIA",
-  authDomain: import.meta.env.VITE_AUTH_DOMAIN || "AUTH_DOMAIN_VACIO",
-  projectId: import.meta.env.VITE_PROJECT_ID || "PROJECT_ID_VACIO"
-};
-const db = getFirestore(initializeApp(firebaseConfig));
+const db = getFirestore(app);
 
 // --------------------------------------------------------
 const movies = [];
