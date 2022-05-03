@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2b2b2b;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  height: 70vh;
+  padding: 1em 3em;
+  background: url("https://i.pinimg.com/originals/49/0d/49/490d49ef5bf550c52d0b0326d45544d3.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.netflix-logo img {
+  width: 30px;
+}
+
+.featured {
+  color: whitesmoke;
+  margin-bottom: 5em;
+}
+
+.featured h1 {
+  margin-bottom: 0.5em;
+  font-size: 4em;
+}
+
+.featured button {
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: #2b2b2be1;
+  padding: 0.7em 2em;
+}
+
+.featured p {
+  margin-top: 0.5em;
+  max-width: 30%;
+  font-weight: bold;
+}
+
+main {
+  color: whitesmoke;
+  padding: 1em 3em;
+}
+
+.film-grid {
+  margin-top: 1em;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(6, minmax(100px, 1fr));
+}
+
+.film {
+  cursor: pointer;
+  height: fit-content;
+  transition: all 0.5s;
+}
+
+.film img {
+  width: 100%;
+}
+
+.film:hover {
+  transform: scale(1.1);
+}
